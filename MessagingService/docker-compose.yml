@@ -1,0 +1,18 @@
+name: my-dork
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container_compose_test
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5433:5433"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d/
+
+volumes:
+  pgdata:

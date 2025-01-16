@@ -11,6 +11,8 @@ add_executable(MessagingService
         src/controllers/webSocketController.h
         src/controllers/webSocketController.cc
         src/filters/authFilter.hpp
+        src/models/message.hpp
+        src/models/chat.hpp
 )
 
 target_link_libraries(MessagingService

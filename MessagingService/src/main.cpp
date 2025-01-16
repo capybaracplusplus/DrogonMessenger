@@ -1,12 +1,15 @@
 #include <iostream>
 #include <drogon/drogon.h>
+#include "controllers/webSocketController.h"
+#include "filters/authFilter.hpp"
+
 
 int main() {
-    std::clog << "log start" << std::endl;
-    std::clog << "Drogon version: " << drogon::getVersion() << std::endl;
+    LOG_INFO << "log start";
+    LOG_INFO << "Drogon version: " << drogon::getVersion();
 
     drogon::app().loadConfigFile("../src/config.json");
-    std::clog << "log loadConfigFile" << std::endl;
+    LOG_INFO << "log loadConfigFile";
 
     drogon::app().run();
     return 0;

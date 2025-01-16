@@ -9,9 +9,9 @@ public:
     void doFilter(const drogon::HttpRequestPtr &req,
                   drogon::FilterCallback &&fcb,
                   drogon::FilterChainCallback &&fccb) override try {
-        std::clog << "log AuthFilter" << std::endl;
+        LOG_INFO << "log AuthFilter";
 
-        std::string access_token = req->getParameter("access_token");
+        std::string access_token = req->getParameter("accessToken");
 
         if (access_token.empty()) {
             throw std::runtime_error("access_token is empty");
