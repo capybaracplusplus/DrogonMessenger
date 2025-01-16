@@ -1,0 +1,15 @@
+{
+  "log": {
+    "log_level": "TRACE"
+  },
+  "listeners": [
+    {
+      "address": "127.0.0.1",
+      "port": 4000,
+      "https": false,
+      "cert": "",
+      "key": ""
+    }
+  ],
+  "threads_num": 2
+}

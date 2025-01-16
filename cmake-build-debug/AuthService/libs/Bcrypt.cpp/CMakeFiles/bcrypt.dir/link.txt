@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbcrypt.a CMakeFiles/bcrypt.dir/src/bcrypt.cpp.o CMakeFiles/bcrypt.dir/src/blowfish.cpp.o
+/usr/bin/ranlib libbcrypt.a

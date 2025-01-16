@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DrogonAuth"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\AuthService\;CMake Files\AuthService\libs\;CMake Files\AuthService\libs\Bcrypt.cpp\;CMake Files\AuthService\libs\redis-plus-plus\;CMake Files\AuthService\libs\redis-plus-plus\cmake\;CMake Files\AuthService\libs\redis-plus-plus\test\;CMake Files\AuthService\libs\googletest\;CMake Files\AuthService\libs\googletest\googlemock\;CMake Files\AuthService\libs\googletest\googlemock\cmake\;CMake Files\AuthService\libs\googletest\googletest\;CMake Files\AuthService\libs\googletest\googletest\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\;CMake Files\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\usr\share\cmake\;CMake Files\..\..\..\..\..\..\usr\share\cmake\nlohmann_json\;CMake Files\MessagingService\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_drogon_app">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/my_drogon_app" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add directory="/path/to/redis-plus-plus"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/libs/jwt-cpp/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/usr/include/jsoncpp"/>
+					<Add directory="/usr/include/postgresql"/>
+					<Add directory="/usr/include/postgresql/16/server"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 my_drogon_app"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_drogon_app/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/my_drogon_app" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add directory="/path/to/redis-plus-plus"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/libs/jwt-cpp/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/usr/include/jsoncpp"/>
+					<Add directory="/usr/include/postgresql"/>
+					<Add directory="/usr/include/postgresql/16/server"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 my_drogon_app/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bcrypt">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/libbcrypt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/include"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 bcrypt"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bcrypt/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/libbcrypt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/include"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 bcrypt/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/Bcrypt.cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis++_static">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/libredis++.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 redis++_static"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis++_static/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/libredis++.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 redis++_static/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis++">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/libredis++.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 redis++"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis++/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/libredis++.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 redis++/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_redis++">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/test_redis++" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/../src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/../src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/../src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 test_redis++"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_redis++/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/test_redis++" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/../src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/../src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/../src/sw/redis++/cxx17"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 test_redis++/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/redis-plus-plus/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/include"/>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/cmake-build-debug/AuthService/libs/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/src/bcrypt.cpp">
+			<Option target="bcrypt"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/src/blowfish.cpp">
+			<Option target="bcrypt"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/command.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/command.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/command_options.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/command_options.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/connection.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/connection.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/connection_pool.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/connection_pool.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/crc16.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/errors.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/errors.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/patterns/redlock.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/patterns/redlock.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/pipeline.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/pipeline.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/redis.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/redis.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/redis_cluster.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/redis_cluster.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/redis_uri.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/redis_uri.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/reply.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/reply.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/sentinel.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/sentinel.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/shards.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/shards.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/shards_pool.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/shards_pool.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/subscriber.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/subscriber.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/transaction.cpp">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/src/sw/redis++/transaction.h">
+			<Option target="redis++_static"/>
+			<Option target="redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/src/sw/redis++/test_main.cpp">
+			<Option target="test_redis++"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/controllers/authController.cpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/controllers/authController.h">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/dto/userDtro.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/main.cpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/middlewares/TokenExtractionMiddleware.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/middlewares/ValidateEmailAndUsernameMiddleware .hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/middlewares/ValidatePasswordMiddleware .hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/middlewares/ValidateRequestBodyMiddleware.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/middlewares/ValidateTokensMiddleware.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/models/user.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/repositories/sessionRepos.cpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/repositories/sessionRepos.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/repositories/userRepos.cpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/repositories/userRepos.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/services/serviceAuth.cpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/services/serviceAuth.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/src/utils/jwt/jwtToken.hpp">
+			<Option target="my_drogon_app"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AuthService\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/Bcrypt.cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AuthService\libs\Bcrypt.cpp\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AuthService\libs\redis-plus-plus\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/hiredis_features.h.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\redis-plus-plus\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/cmake/redis++-config.cmake.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\redis-plus-plus\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/cmake/redis++.pc.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\redis-plus-plus\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/redis-plus-plus/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AuthService\libs\redis-plus-plus\test\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/AuthService/libs/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\AuthService\libs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/DrogonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/DrogonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/DrogonTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/DrogonTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/DrogonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/DrogonUtilities.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/FindFilesystem.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/FindJsoncpp.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/FindUUID.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/Findpg.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Drogon/ParseAndAddDrogonTests.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Trantor/TrantorConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Trantor/TrantorConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Trantor/TrantorTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Trantor/TrantorTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/local/lib/cmake/Trantor/TrantorTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/../../../../../../usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MessagingService\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

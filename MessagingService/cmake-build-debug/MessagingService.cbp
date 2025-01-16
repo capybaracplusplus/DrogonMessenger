@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MessagingService"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MessagingService">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/MessagingService" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/libs/jwt-cpp/include"/>
+					<Add directory="/usr/include/jsoncpp"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 MessagingService"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MessagingService/fast">
+				<Option output="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/MessagingService" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/libs/jwt-cpp/include"/>
+					<Add directory="/usr/include/jsoncpp"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 MessagingService/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/src/controllers/webSocketController.cc">
+			<Option target="MessagingService"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/src/controllers/webSocketController.h">
+			<Option target="MessagingService"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/src/filters/authFilter.hpp">
+			<Option target="MessagingService"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/src/main.cpp">
+			<Option target="MessagingService"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/DrogonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/DrogonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/DrogonTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/DrogonTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/DrogonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/DrogonUtilities.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/FindFilesystem.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/FindJsoncpp.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/FindUUID.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/Findpg.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Drogon/ParseAndAddDrogonTests.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Drogon\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Trantor/TrantorConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Trantor/TrantorConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Trantor/TrantorTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Trantor/TrantorTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/dimak/CLionProjects/drogonChat/MessagingService/../../../../../../../usr/local/lib/cmake/Trantor/TrantorTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Trantor\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

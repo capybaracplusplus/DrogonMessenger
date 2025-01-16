@@ -1,0 +1,191 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"AuthService/libs/redis-plus-plus/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 320,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 329,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 353,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 356,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 368,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 379,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"AuthService/libs/redis-plus-plus/libredis++.a"
+			],
+			"targetId" : "redis++_static::@af55c20dac7031e1b178",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"AuthService/libs/redis-plus-plus/libredis++.so.1.3.14",
+				"AuthService/libs/redis-plus-plus/libredis++.so.1"
+			],
+			"targetId" : "redis++::@af55c20dac7031e1b178",
+			"targetIndex" : 7,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"AuthService/libs/redis-plus-plus/libredis++.so"
+			],
+			"targetId" : "redis++::@af55c20dac7031e1b178",
+			"targetIndex" : 7,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/cmake/redis++",
+			"exportName" : "redis++-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "redis++_static::@af55c20dac7031e1b178",
+					"index" : 8
+				},
+				{
+					"id" : "redis++::@af55c20dac7031e1b178",
+					"index" : 7
+				}
+			],
+			"paths" : 
+			[
+				"AuthService/libs/redis-plus-plus/CMakeFiles/Export/7d81f1912f64acc9d7f7c51a1b3ceb40/redis++-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/sw/redis++",
+			"paths" : 
+			[
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/cmd_formatter.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/command.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/command_args.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/command_options.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/connection.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/connection_pool.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/cxx17/sw/redis++/cxx_utils.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/errors.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/no_tls/sw/redis++/tls.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/pipeline.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/queued_redis.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/queued_redis.hpp",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/redis++.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/redis.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/redis.hpp",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/redis_cluster.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/redis_cluster.hpp",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/redis_uri.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/reply.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/sentinel.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/shards.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/shards_pool.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/subscriber.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/transaction.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/utils.h",
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/version.h",
+				"cmake-build-debug/AuthService/libs/redis-plus-plus/src/sw/redis++/hiredis_features.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/sw/redis++/patterns",
+			"paths" : 
+			[
+				"AuthService/libs/redis-plus-plus/src/sw/redis++/patterns/redlock.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "share/cmake/redis++",
+			"paths" : 
+			[
+				"cmake-build-debug/AuthService/libs/redis-plus-plus/cmake/redis++-config.cmake",
+				"cmake-build-debug/AuthService/libs/redis-plus-plus/cmake/redis++-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"cmake-build-debug/AuthService/libs/redis-plus-plus/cmake/redis++.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "AuthService/libs/redis-plus-plus",
+		"source" : "AuthService/libs/redis-plus-plus"
+	}
+}

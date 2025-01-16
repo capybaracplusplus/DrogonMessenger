@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "AuthService/libs/Bcrypt.cpp",
+		"source" : "AuthService/libs/Bcrypt.cpp"
+	}
+}
