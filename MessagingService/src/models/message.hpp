@@ -4,14 +4,23 @@
 #include <string>
 #include <optional>
 
-class message {
+class Message {
     using messageId = size_t;
     using userId = size_t;
     using chatId = size_t;
 public:
-    static message create();
+    static Message create(
+            std::optional<messageId> id,
+            chatId chatId,
+            userId fromUserId,
+            std::optional<userId> toUserId,
+            std::string body,
+            time_t sentDate,
+            bool isRead_
+    ) {}
+
 public:
-    messageId getId() const;
+    std::optional<messageId> getId() const;
 
     chatId getChatId() const;
 
@@ -31,13 +40,16 @@ public:
 
     void markAsRead();
 
+    bool isPing() const;
+
 private:
-    messageId id_;
+    std::optional<messageId> id_;
     chatId chatId_;
-    userId from_;
-    std::optional<userId> to_;
+    userId fromUserId_;
+    std::optional<userId> toUserId_;
     std::string body_;
     time_t sentDate_;
     std::optional<time_t> receivedDate_;
     bool isRead_;
+    bool isPing_;
 };

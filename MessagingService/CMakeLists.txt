@@ -13,6 +13,9 @@ add_executable(MessagingService
         src/filters/authFilter.hpp
         src/models/message.hpp
         src/models/chat.hpp
+        src/utils/isValidJwtToken.hpp
+        src/utils/getCurrentTime.hpp
+        src/services/chatManagerService.hpp
 )
 
 target_link_libraries(MessagingService

@@ -1,9 +1,9 @@
-name: my-dork
+name: messagins_service
 
 services:
   postgres:
     image: postgres:latest
-    container_name: postgres_container_compose_test
+    container_name: postgres_container_compose_messagins_service
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres

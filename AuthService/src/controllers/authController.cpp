@@ -4,6 +4,8 @@
 #include "../services/serviceAuth.hpp"
 #include "../repositories/sessionRepos.hpp"
 
+using namespace drogon;
+
 void authController::signUp(const HttpRequestPtr &req, std::function<void(const HttpResponsePtr &)> &&callback) {
     std::clog << "log authController::signUp" << std::endl;
     try {

@@ -3,8 +3,6 @@
 #include <sw/redis++/redis++.h>
 #include "../utils/jwt/jwtToken.hpp"
 
-//using namespace sw::redis;
-
 namespace repos {
     extern sw::redis::Redis redisDbClient;
 
